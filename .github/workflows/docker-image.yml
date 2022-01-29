@@ -9,7 +9,8 @@ on:
 jobs:
 
   test:
-    echo "test stage gestartet"
+    - name: Echo auf Console
+      run: echo "test stage gestartet"
 
   build:
 
