@@ -9,6 +9,8 @@ on:
 jobs:
 
   test:
+    runs-on: ubuntu-latest
+
     steps:
     - name: Echo auf Console
       run: echo "test stage gestartet"
@@ -23,6 +25,8 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
   run:
+    runs-on: ubuntu-latest
+
     steps:
       - name: Echo auf Console
         run: echo "run stage gestartet"
